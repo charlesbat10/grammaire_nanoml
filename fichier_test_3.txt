@@ -1,0 +1,21 @@
+<document>
+ <titre> Sujet de projet Nanoml </titre>
+ <section>
+<titre> Grammaire </titre>
+inspiree par la forme BN.
+<liste>
+<item> texte_enrichi ::= document annexes </item>
+<item> document ::= 'debut_doc' contenu 'fin_doc' </item>
+<item> annexes ::= { 'debut_annexe' contenu 'fin_annexe' }
+</item>
+<item> ... </item>
+</liste>
+ </section>
+ <section>
+<titre> Rendu </titre>
+ </section>
+</document>
+<annexe>
+Auteur : Weinberg Benjamin <br/>
+Date : 23/01/2024 <br/>
+</annexe>

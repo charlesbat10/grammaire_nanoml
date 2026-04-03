@@ -1,0 +1,91 @@
+<document>
+ <titre> Sujet de projet Nanoml </titre>
+ <section>
+<titre> Grammaire </titre>
+inspiree par la forme BN.
+<liste>
+<item> texte_enrichi ::= document annexes </item>
+<item> document ::= 'debut_doc' contenu 'fin_doc' </item>
+<item> annexes ::= { 'debut_annexe' contenu 'fin_annexe' }
+</item>
+<item> ... </item>
+</liste>
+ </section>
+ <section>
+<titre> Demarche du projet </titre>
+<liste>
+<item> Ecrire une permiere version de l'analyseur gerant les
+balises
+<liste>
+<item> document </item>
+<item> annexe </item>
+<item> section </item>
+<item> et le texte </item>
+</liste>
+</item>
+<item> Decorer l'analyseur pour que l'arbre N-aire soit creer
+<liste>
+<item> Ajouter les parametres necessaire aux
+fonctions </item>
+<item> Manipuler les noeuds de l'arbre </item>
+<item> reprendre le programme pour qu'il soit
+maintenable/reutilisable </item>
+<item> reutiliser le travail sur les arbres
+<liste>
+<item> utils </item>
+<item> noeud </item>
+<item> (arbre_binaire peut aider)
+</item>
+</liste>
+</item>
+</liste>
+</item>
+<item> Afficher l'arbre N-aire
+<liste>
+<item> Definir les routines necessaires </item>
+<item> Repartir dans des bonnes bibliotheques
+</item>
+<item> obtenir un rendu </item>
+</liste>
+</item>
+<item> Ajouter ce qui manque
+<liste>
+<item> les titres </item>
+<item> les balises retour_a_la_ligne </item>
+<item> les balises "important" </item>
+<item> listes et items (Danger) </item>
+</liste>
+</item>
+<item> Envisager des extensions </item>
+</liste>
+ </section>
+</document>
+<annexe>
+<titre> Contacts </titre>
+Auteur : Weinberg Benjamin <br/>
+Date : 23/01/2024 <br/>
+</annexe>
+<annexe>
+<section>
+<titre> Nota Bene </titre>
+Dans un premiere version, on ne pourra pas voir apparaitre dans un
+rendu les element syntaxique necessaire a la structuration du document.
+En effet pour realiser ceci, il faudrait que l'analyseur puisse
+distinguer entre une balise qui structre le document et
+une balise que doit apparaitre comme du texte.
+Ceci pourrait etre realiser en affinant l'analyseur, notamment en
+ajoutant des caracteres d'evitement.
+</section>
+<section>
+<titre> Liste non exhaustive d'amelioration </titre>
+<liste>
+<item> affiner l'analyseur pour que les balises se decoupe en
+3 parties : les chevrons ouvrant et fermant et le nom de l'element; </item>
+<item> ajouter un moyen de faire un echappement pour qu'un
+texte puisse contenir le texte d'une balise; </item>
+<item> gerer une numerotation des titres en fonction de la
+hierachie des sections; </item>
+<item> ajouter des balises. </item>
+</liste>
+</section>
+</annexe>
